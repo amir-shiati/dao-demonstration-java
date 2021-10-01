@@ -3,21 +3,22 @@ package core.dao;
 import core.model.Note;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface NoteDAO {
+public interface DAO<T> {
 
     // get a single note by id.
-    Note getNote(long id);
+    Optional<T> get(long id);
 
     // get all notes.
-    List<Note> getNotes();
+     List<T> getAll();
 
     // insert a new note.
-    void insertNote(Note note);
+     void insert(T t);
 
     // update an existing note.
-    void updateNote(Note note);
+     void update(T t);
 
     // delete a note.
-    void deleteNote(Note note);
+     void delete(T t);
 }
