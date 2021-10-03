@@ -5,6 +5,10 @@ public class Note {
     private String title;
     private String description;
 
+    public Note(long id) {
+        this.id = id;
+    }
+
     public Note(long id, String title, String description) {
         this.id = id;
         this.title = title;
