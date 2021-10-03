@@ -1,0 +1,4 @@
+core/dao/DAO.class
+core/dao/NoteDAOImpl.class
+core/model/Note.class
+core/database/DBConnection.class
